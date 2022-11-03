@@ -14,7 +14,7 @@ def predict():
     # kualitas = (request.form["kualitas"])
     # prediction = model.predict([[bulan, tahun, kualitas]])
     # output = round(prediction[0],2)
-        prediction = 0 # Nilai prediksi diisi di sini
-        return render_template('index.html', prediction=prediction)
+        prediction = 5000 # Nilai prediksi diisi di sini
+        return render_template('index.html', prediction=("Prediksi harga beras: Rp " + str(prediction)))
 if __name__ == "__main__":
     app.run()

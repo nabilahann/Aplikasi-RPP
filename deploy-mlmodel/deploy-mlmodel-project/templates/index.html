@@ -18,6 +18,9 @@
    h1 {
       text-align: center;
    }
+   p {
+      text-align: center;
+   }
    img {
       opacity: 0.7;
    }
@@ -36,7 +39,6 @@
       text-align: left;
       background: linear-gradient(#5DAC81, #69B0AC);
    }
-   
    form {
       width: 80%;
    }
@@ -96,8 +98,9 @@
                </select>
                <br>
                <button class="block" type="submit">Prediksi Harga</button>
+               <br>
+               <p>{{ prediction }}</p>
             </form>
-            <p>{{ prediction }}</p>
       <br>
       <br>
       </div>
