@@ -1,5 +1,6 @@
 from flask import Flask, redirect, request, render_template
 import pickle
+import numpy
 
 app = Flask(__name__)
 
@@ -38,8 +39,8 @@ def predict():
         pickled_model = pickle.load(open('model/model.pkl', 'rb'))
         result = pickled_model.predict([[tahun, bulan, kualitas]])
 
-        output = round(result[0],2)
-        prediction = output # Nilai prediksi diisi di sini
+        output = numpy.round(result[0],2)
+        prediction = output[0] # Nilai prediksi diisi di sini
         return render_template('index.html', first_line=("Prediksi harga beras " + kualitas_value[kualitas]), second_line=(" Bulan " + bulan_value[bulan] + " " + str(tahun) + " Rp " + str(prediction)))
 if __name__ == "__main__":
     app.run()
