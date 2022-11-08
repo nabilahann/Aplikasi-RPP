@@ -1,4 +1,5 @@
-# Aplikasi-RPP
+# Aplikasi Prediksi Harga Beras
+## Anggota Kelompok
 1. 13519047 Rhea Elka Pandumpi
 2. 13519097 Nabila Hannania
 3. 13519137 Siti Iedrania Azzariyat Akbar
